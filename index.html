@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Survey form</title>
+</head>
+<body>
+    
+    <main>
+        <div id="container">
+            <header>
+                <h1 id="title">freeCodeCamp Survey Form</h1>
+                <p id="description">This is the second challenge in the responsive web design learning path</p>
+            </header>
+            <form action="" id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label" class="label-text">Name</label>
+                    <input type="text" id="name" name="name" class="input-text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" id="email-label" class="label-text">Email</label>
+                    <input type="email" id="email" name="email" class="input-text" placeholder="Enter your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age" id="number-label" class="label-text">Age (optional)</label>
+                    <input type="number" id="number" name="age"  min="10" max="88" class="input-text" placeholder="Enter your age">
+                </div>
+
+                <div class="form-group">
+                    <p for="lenguages">Which language it's your favorite?</p>
+                    <select name="lenguages" id="dropdown" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="python">Python</option>
+                        <option value="java">java</option>
+                        <option value="C">C#</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p for="Why">Why are you learning that language?</p>
+                    <label><input name="user-radio" type="radio" value="easy">It's easy</label>
+                    <label><input name="user-radio" type="radio" value="challenge">I like challenges</label>
+                    <label><input name="user-radio" type="radio" value="payed">It's well payed</label>
+                </div>
+
+                <div class="form-group">
+                    <p>What do you like to build with that language?</p>
+                    <label><input name="prefer" value="frontend" type="checkbox">Front end</label>
+                    <label><input name="prefer" value="backend" type="checkbox">Back end</label>
+                    <label><input name="prefer" value="fullstack" type="checkbox">Full stack projects</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Any suggestion?</p>
+                    <textarea name="suggestion" id="suggestion" cols="40" rows="10" placeholder="Enter your suggestions"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
